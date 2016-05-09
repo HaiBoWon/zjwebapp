@@ -1,0 +1,11 @@
+<ion-view view-title="产品确权" hide-nav-bar="true">
+  <ion-content>
+    <h6 style="padding-left: 10px;height: 30px;margin: 0px;background: lightgray;line-height: 30px" class="title">产品确权</h6>
+    <div class="list">
+      <a href="#" class="item item-icon-right" ng-repeat="madebyProduct in madebyProducts">
+        <i>{{madebyProduct.name}}</i>
+        <i style="float: right">{{madebyProduct.time}}</i>
+      </a>
+    </div>
+  </ion-content>
+</ion-view>

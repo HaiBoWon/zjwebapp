@@ -1,0 +1,12 @@
+<ion-view view-title="公告" hide-nav-bar="true">
+  <ion-content class="padding">
+    <div class="list" ng-repeat="info in newsInfo">
+      <div style="border-bottom: 2px">
+        <i style="float: right;">{{info.date}}</i>
+        <p>{{info.type}}</p>
+        <span>{{info.content}}</span>
+        <hr style="width: 100%" size="1"/>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
