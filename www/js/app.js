@@ -43,15 +43,10 @@ angular.module('zjfae', ['ionic', 'zjfae.controllers', 'zjfae.services','zjfae.c
         templateUrl:'template/forum-note-speak.html',
         controller: 'ForumNoteSpeakCtrl'
       })
-      .state('moreActivating', {
-        url: '/moreActivating',
-        templateUrl: 'template/more-activating.html',
-        controller: 'ActivatingCtrl'
-      })
-      .state('moreActivated', {
-        url: '/moreActivated',
-        templateUrl: 'template/more-activated.html',
-        controller: 'ActivatedCtrl'
+      .state('moreActivityCenter', {
+        url: '/moreActivityCenter',
+        templateUrl: 'template/more-activity-center.html',
+        controller: 'moreActivityCtrl'
       })
       .state('moreContact', {
           url: '/moreContact',
@@ -67,11 +62,6 @@ angular.module('zjfae', ['ionic', 'zjfae.controllers', 'zjfae.services','zjfae.c
         url: '/moreNews',
         templateUrl: 'template/more-news.html',
         controller:'NewsCtrl'
-      })
-      .state('moreNotice',{
-        url: '/moreNotice',
-        templateUrl: 'template/more-notice.html',
-        controller:'NoticeCtrl'
       })
       .state('moreGiveEncourage', {
         url: '/moreGiveEncourage',

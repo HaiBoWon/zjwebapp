@@ -58,29 +58,7 @@ angular.module('zjfae.services', [])
       }
     };
   })
-  .factory('EndActivityInfo', function ($http,$q) {
-    return {
-      all: function () {
-        var deferred = $q.defer();
-        $http.get('data/endActivitys.json').success(function (data) {
-          deferred.resolve(data.result);
-        });
-        return deferred.promise;
-      }
-    };
-  })
   .factory('News', function ($http,$q) {
-    return {
-      all: function () {
-        var deferred = $q.defer();
-        $http.get('data/news.json').success(function (data) {
-          deferred.resolve(data.result);
-        });
-        return deferred.promise;
-      }
-    }
-  })
-  .factory('Notice', function ($http,$q) {
     return {
       all: function () {
         var deferred = $q.defer();

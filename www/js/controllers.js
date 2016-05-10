@@ -54,18 +54,11 @@ angular.module('zjfae.controllers',[])
       $ionicLoading.hide();
     });
   })
-  .controller('ActivatingCtrl', function ($scope,$ionicLoading,ActivityInfo) {
+  .controller('moreActivityCtrl', function ($scope,$ionicLoading,ActivityInfo) {
     defrAllByActivity(ActivityInfo,$ionicLoading,$scope);
-  })
-  .controller('ActivatedCtrl', function ($scope,$ionicLoading,EndActivityInfo) {
-    defrAllByActivity(EndActivityInfo,$ionicLoading,$scope);
   })
   .controller('NewsCtrl', function ($scope,$ionicLoading,News) {
     defrAllByNews(News,$ionicLoading,$scope);
-  })
-  .controller('NoticeCtrl', function ($scope,$ionicLoading,Notice) {
-    // 初次加载数据
-    defrAllByNews(Notice,$ionicLoading,$scope);
   })
   .controller('AddServiceCtrl', function ($scope, MadebyProducts) {
     $scope.madebyProducts = MadebyProducts.all();
