@@ -54,7 +54,7 @@ angular.module('zjfae.controllers',[])
       $ionicLoading.hide();
     });
   })
-  .controller('moreActivityCtrl', function ($scope,$ionicLoading,ActivityInfo) {
+  .controller('ActivityCenterCtrl', function ($scope,$ionicLoading,ActivityInfo) {
     var promise = ActivityInfo.all();
     $ionicLoading.show({
       template: '玩命加载中...'
