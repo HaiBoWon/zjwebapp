@@ -1,12 +1,10 @@
 <ion-view view-title="活动中心" hide-nav-bar="true">
   <ion-content class="activity-center">
-    <div>
       <div ng-repeat="info in activityInfo">
         <img ng-src="{{info.url}}">
         <i>{{info.date}}</i>
         <p>{{info.content}}</p>
-        <hr class="divider">
+        <hr class="divider"/>
       </div>
-    </div>
   </ion-content>
 </ion-view>
