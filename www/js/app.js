@@ -77,7 +77,17 @@ angular.module('zjfae', ['ionic', 'zjfae.controllers', 'zjfae.services','zjfae.c
       url:'/serviceCentre',
       templateUrl:'template/service-centre.html'/*,
       controller:'ServiceCentreCtrl'*/
-    });
+      })
+      .state('activityQuiet',{
+        url:'/activityQuiet',
+        templateUrl:'template/activity-quiet.html'/*,
+         controller:'ServiceCentreCtrl'*/
+      })
+      .state('newsQuiet',{
+        url:'/newsQuiet',
+        templateUrl:'template/news-quiet.html'/*,
+         controller:'ServiceCentreCtrl'*/
+      });
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/home');
   });
