@@ -46,7 +46,7 @@ angular.module('zjfae', ['ionic', 'zjfae.controllers', 'zjfae.services','zjfae.c
       .state('moreActivityCenter', {
         url: '/moreActivityCenter',
         templateUrl: 'template/more-activity-center.html',
-        controller: 'moreActivityCtrl'
+        controller: 'ActivityCenterCtrl'
       })
       .state('moreContact', {
           url: '/moreContact',

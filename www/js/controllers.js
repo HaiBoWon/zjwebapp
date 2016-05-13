@@ -54,11 +54,25 @@ angular.module('zjfae.controllers',[])
       $ionicLoading.hide();
     });
   })
-  .controller('moreActivityCtrl', function ($scope,$ionicLoading,ActivityInfo) {
-    defrAllByActivity(ActivityInfo,$ionicLoading,$scope);
+  .controller('ActivityCenterCtrl', function ($scope,$ionicLoading,ActivityInfo) {
+    var promise = ActivityInfo.all();
+    $ionicLoading.show({
+      template: '玩命加载中...'
+    });
+    promise.then(function (data) {  // 成功回调
+      $scope.activityInfo = data;
+      $ionicLoading.hide();
+    });
   })
   .controller('NewsCtrl', function ($scope,$ionicLoading,News) {
-    defrAllByNews(News,$ionicLoading,$scope);
+    var promise = News.all();
+    $ionicLoading.show({
+      template: '玩命加载中...'
+    });
+    promise.then(function (data) {  // 成功回调
+      $scope.newsInfo = data;
+      $ionicLoading.hide();
+    });
   })
   .controller('AddServiceCtrl', function ($scope, MadebyProducts) {
     $scope.madebyProducts = MadebyProducts.all();
@@ -91,23 +105,3 @@ angular.module('zjfae.controllers',[])
       window.callActivityPlugin();
     };
   });
-function defrAllByNews(promiseObj,$ionicLoading,$scope) {
-  var promise = promiseObj.all();
-  $ionicLoading.show({
-    template: '玩命加载中...'
-  });
-  promise.then(function (data) {  // 成功回调
-    $scope.newsInfo = data;
-    $ionicLoading.hide();
-  });
-}
-function defrAllByActivity(promiseObj,$ionicLoading,$scope) {
-  var promise = promiseObj.all();
-  $ionicLoading.show({
-    template: '玩命加载中...'
-  });
-  promise.then(function (data) {  // 成功回调
-    $scope.activityInfo = data;
-    $ionicLoading.hide();
-  });
-}
