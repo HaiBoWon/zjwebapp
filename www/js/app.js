@@ -87,6 +87,11 @@ angular.module('zjfae', ['ionic', 'zjfae.controllers', 'zjfae.services','zjfae.c
         url:'/newsQuiet',
         templateUrl:'template/news-quiet.html'/*,
          controller:'ServiceCentreCtrl'*/
+      })
+      .state('feedbackOptimization',{
+        url:'/feedbackOptimization',
+        templateUrl:'template/feedback-optimization.html'/*,
+         controller:'ServiceCentreCtrl'*/
       });
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/home');
