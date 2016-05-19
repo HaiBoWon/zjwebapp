@@ -10166,6 +10166,7 @@ a.button {
 .feedback *:-ms-input-placeholder {
   padding: 0 5px; }
 
+/* service-centre */
 .cont-box {
   width: 100%;
   height: 40px;
@@ -10247,6 +10248,7 @@ a.button {
     color: #7c7c7c;
     float: right; }
 
+/* activity */
 .activity-ul {
   clear: both;
   overflow: hidden; }
@@ -10271,6 +10273,7 @@ a.button {
     text-align: center;
     line-height: 32px; }
 
+/* news-quiet */
 .news-box {
   list-style-type: none; }
   .news-box li {
@@ -10289,3 +10292,64 @@ a.button {
       margin: 0px;
       position: relative;
       top: 10px; }
+
+.feedback-select {
+  border-radius: 5px;
+  height: 30px;
+  width: 90%;
+  border-color: #888888;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+.feedback-textarea {
+  border-radius: 5px;
+  width: 90%;
+  height: 200px;
+  margin-left: 5%;
+  resize: none;
+  border: 1px solid #707070;
+  margin-bottom: 30px;
+  padding: 10px; }
+
+.feedback-input {
+  border-radius: 5px;
+  width: 90%;
+  height: 30px;
+  margin-left: 5%;
+  border: 1px solid #888888;
+  margin-bottom: 100px;
+  padding-left: 10px; }
+
+.feedback-button {
+  border-radius: 5px;
+  width: 90%;
+  height: 40px;
+  margin-left: 5%;
+  background-color: #83050B;
+  border: #83050B;
+  color: #ffffff; }
+
+.contact-ul {
+  list-style: none; }
+  .contact-ul li {
+    background-color: #ffffff;
+    border-bottom: 1px solid #4d4d4d;
+    padding-bottom: 10px; }
+    .contact-ul li .contact-title {
+      width: 100%;
+      height: 20px;
+      background-color: #f0f0f0;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #4d4d4d; }
+      .contact-ul li .contact-title h6 {
+        color: #4d4d4d;
+        margin: 0px;
+        padding-left: 5%;
+        line-height: 17px; }
+    .contact-ul li span {
+      text-decoration: none;
+      margin-left: 5%; }
+    .contact-ul li p {
+      float: right;
+      margin-right: 5%;
+      color: #707070; }
