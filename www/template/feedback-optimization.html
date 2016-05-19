@@ -1,18 +1,24 @@
 <ion-view view-title="给我鼓励" hide-nav-bar="true">
-  <ion-content>
-    <div style="text-align:center">
-      <select class="feedback-select">
+  <ion-content style= "background-color: #f7f7f7;">
+    <div class="feedback-box">
+      <div>
+      <select>
         <option>1</option>
         <option>2</option>
         <option>3</option>
         <option>4</option>
         <option>5</option>
       </select>
+      </div>
+      <div>
+        <textarea placeholder="请输入您的反馈意见"></textarea>
+      </div>
+      <div>
+        <input placeholder="请输入您的手机号码">
+      </div>
+      <span herf="#">
+        <button>提    交</button>
+      </span>
     </div>
-    <div>
-      <textarea class="feedback-textarea" placeholder="请输入您的反馈"></textarea>
-    </div>
-    <input class="feedback-input" placeholder="请输入您的电话">
-    <button class="feedback-button">提交</button>
   </ion-content>
 </ion-view>
