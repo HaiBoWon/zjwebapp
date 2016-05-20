@@ -447,42 +447,59 @@ text-align: right;
   ;
   }
 }
-.feedback {
-  select {
-    width: 80%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-width: 1px;
-    border-radius: 5px;
-    border-color: lightgrey
-  }
 
-  textarea {
-    width: 80%;
-    margin-left: 10%;
-    margin-bottom: 20px;
-    border:1px solid $col-border;
-    border-radius: 5px;
-    resize: none
+.list{
+  &.list-space{
+    .item-addon,label{
+      border-radius: 2px;
+    }
+    &>.item-addon{
+      margin:0 10px 20px;
+      @include display-flex();
+      label{
+        flex: 1 0;
+      }
+      button,img.button-code{
+        border: 1px solid #ddd;margin:-1px 0 -1px 4px;
+        font-size: 14px;
+        &.button-clear{padding: 0 12px;}
+      }
+      img.button-code{
+        padding: 0;
+      }
+    }
+    &>label{margin:0 10px 20px;}
+    &>:last-child{margin-bottom: 0;}
+    &>.item-checkbox{
+      padding-left: 40px;
+      text-align: left;
+      border:0 none;
+      font-size: 14px;
+      label.checkbox{
+        margin-top: -18px;
+        &>input{
+          width: 18px; height: 18px;
+          &:before{
+            border-radius:2px;
+            background-color: #fff;
+            border-color: #ddd;
+            border-width: 1px;
+          }
+          &:after{
+            border-color: #555;
+            height: 5px;
+            width: 10px;
+            border-width: 2px;
+          }
+        }
+      }
+    }
   }
-  input {
-    width: 80%;
-    display: block;
-    margin-left: 10%;
-    border: solid;
-    border-width: 1px;
-    border-radius: 5px;
-    border-color: lightgrey;
-  }
-  *::-webkit-input-placeholder {
-    padding: 0 5px;
-  }
-  *:-moz-placeholder {
-    padding: 0 5px;
-  }
-  *:-ms-input-placeholder {
-    padding: 0 5px;
-  }
+}
+
+/* 意见反馈 */
+.feedback {
+  .list-space{padding-top: 20px;}
 }
 
 @import "ionic.syx";

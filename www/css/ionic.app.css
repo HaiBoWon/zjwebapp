@@ -10132,39 +10132,58 @@ a.button {
 .contact.contact-one i.one {
   color: black; }
 
-.feedback select {
-  width: 80%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-width: 1px;
-  border-radius: 5px;
-  border-color: lightgrey; }
+.list.list-space .item-addon, .list.list-space label {
+  border-radius: 2px; }
 
-.feedback textarea {
-  width: 80%;
-  margin-left: 10%;
-  margin-bottom: 20px;
-  border: 1px solid #d0d0d0;
-  border-radius: 5px;
-  resize: none; }
+.list.list-space > .item-addon {
+  margin: 0 10px 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .list.list-space > .item-addon label {
+    flex: 1 0; }
+  .list.list-space > .item-addon button, .list.list-space > .item-addon img.button-code {
+    border: 1px solid #ddd;
+    margin: -1px 0 -1px 4px;
+    font-size: 14px; }
+    .list.list-space > .item-addon button.button-clear, .list.list-space > .item-addon img.button-code.button-clear {
+      padding: 0 12px; }
+  .list.list-space > .item-addon img.button-code {
+    padding: 0; }
 
-.feedback input {
-  width: 80%;
-  display: block;
-  margin-left: 10%;
-  border: solid;
-  border-width: 1px;
-  border-radius: 5px;
-  border-color: lightgrey; }
+.list.list-space > label {
+  margin: 0 10px 20px; }
 
-.feedback *::-webkit-input-placeholder {
-  padding: 0 5px; }
+.list.list-space > :last-child {
+  margin-bottom: 0; }
 
-.feedback *:-moz-placeholder {
-  padding: 0 5px; }
+.list.list-space > .item-checkbox {
+  padding-left: 40px;
+  text-align: left;
+  border: 0 none;
+  font-size: 14px; }
+  .list.list-space > .item-checkbox label.checkbox {
+    margin-top: -18px; }
+    .list.list-space > .item-checkbox label.checkbox > input {
+      width: 18px;
+      height: 18px; }
+      .list.list-space > .item-checkbox label.checkbox > input:before {
+        border-radius: 2px;
+        background-color: #fff;
+        border-color: #ddd;
+        border-width: 1px; }
+      .list.list-space > .item-checkbox label.checkbox > input:after {
+        border-color: #555;
+        height: 5px;
+        width: 10px;
+        border-width: 2px; }
 
-.feedback *:-ms-input-placeholder {
-  padding: 0 5px; }
+/* 意见反馈 */
+.feedback .list-space {
+  padding-top: 20px; }
 
 /* service-centre */
 .cont-box {
@@ -10322,36 +10341,3 @@ a.button {
       float: right;
       margin-right: 5%;
       color: #707070; }
-
-/*feedback-optimization*/
-.feedback-box {
-  text-align: center; }
-  .feedback-box select {
-    margin-top: 40px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    width: 90%;
-    height: 40px;
-    border: 1px solid #707070; }
-  .feedback-box textarea {
-    margin-bottom: 20px;
-    margin-left: 5%;
-    border-radius: 5px;
-    width: 90%;
-    height: 200px;
-    border: 1px solid #707070;
-    resize: none; }
-  .feedback-box input {
-    width: 90%;
-    border-radius: 5px;
-    height: 40px;
-    margin-bottom: 20px;
-    border: 1px solid #707070; }
-  .feedback-box button {
-    width: 90%;
-    border-radius: 5px;
-    margin-top: 20px;
-    background-color: #83050B;
-    border: 1px solid #83050B;
-    color: #ffffff;
-    height: 40px; }

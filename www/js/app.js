@@ -88,11 +88,6 @@ angular.module('zjfae', ['ionic', 'zjfae.controllers', 'zjfae.services','zjfae.c
         templateUrl:'template/news-quiet.html'/*,
          controller:'ServiceCentreCtrl'*/
       })
-      .state('feedbackOptimization',{
-        url:'/feedbackOptimization',
-        templateUrl:'template/feedback-optimization.html'/*,
-         controller:'ServiceCentreCtrl'*/
-      })
     .state('contactOptimization',{
       url:'/contactOptimization',
       templateUrl:'template/contact-optimization.html'/*,
