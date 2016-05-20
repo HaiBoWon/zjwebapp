@@ -10282,7 +10282,8 @@ a.button {
     padding: 10px; }
     .news-box li h5 {
       float: right;
-      color: #888888; }
+      color: #888888;
+      margin: 0px; }
     .news-box li p {
       font-size: 12px;
       position: relative;
@@ -10291,6 +10292,7 @@ a.button {
     .news-box li h4 {
       margin: 0px;
       position: relative;
+<<<<<<< HEAD
       top: 10px; }
 
 .feedback-select {
@@ -10319,3 +10321,68 @@ a.button {
   top: 70px;
   padding-top: 21px;
   border: 1px solid #888888; }
+=======
+      top: 0px; }
+
+/*contact-optimization*/
+.contact-ul {
+  list-style: none; }
+  .contact-ul li {
+    background-color: #ffffff;
+    border-bottom: 1px solid #4d4d4d;
+    padding-bottom: 10px; }
+    .contact-ul li .contact-title {
+      width: 100%;
+      height: 30px;
+      background-color: #f0f0f0;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #4d4d4d; }
+      .contact-ul li .contact-title h6 {
+        color: #4d4d4d;
+        margin: 0px;
+        padding-left: 5%;
+        line-height: 30px; }
+    .contact-ul li .table-contact {
+      margin-top: 30px;
+      margin-bottom: 30px; }
+    .contact-ul li span {
+      text-decoration: none;
+      margin-left: 5%; }
+    .contact-ul li p {
+      float: right;
+      margin-right: 5%;
+      color: #707070; }
+
+/*feedback-optimization*/
+.feedback-box {
+  text-align: center; }
+  .feedback-box select {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 90%;
+    height: 40px;
+    border: 1px solid #707070; }
+  .feedback-box textarea {
+    margin-bottom: 20px;
+    margin-left: 5%;
+    border-radius: 5px;
+    width: 90%;
+    height: 200px;
+    border: 1px solid #707070;
+    resize: none; }
+  .feedback-box input {
+    width: 90%;
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid #707070; }
+  .feedback-box button {
+    width: 90%;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: #83050B;
+    border: 1px solid #83050B;
+    color: #ffffff;
+    height: 40px; }
+>>>>>>> 8ef07a0be0978a62b7142b6770904bb1168add20
