@@ -10252,7 +10252,7 @@ a.button {
 .activity-ul {
   clear: both;
   overflow: hidden; }
-  .activity-ul .quiet-li {
+  .activity-ul li {
     width: 100%;
     background-color: #ffffff;
     box-shadow: 0px 0px 1px #888888;
@@ -10292,36 +10292,6 @@ a.button {
     .news-box li h4 {
       margin: 0px;
       position: relative;
-<<<<<<< HEAD
-      top: 10px; }
-
-.feedback-select {
-  border-radius: 5px;
-  height: 30px;
-  width: 90%;
-  position: relative;
-  left: 5%;
-  top: 10px;
-  border-color: #888888; }
-
-.feedback-textarea {
-  border-radius: 5px;
-  width: 90%;
-  height: 200px;
-  position: relative;
-  left: 5%;
-  top: 30px; }
-
-.-textarea {
-  border-radius: 5px;
-  width: 90%;
-  height: 40px;
-  position: relative;
-  left: 5%;
-  top: 70px;
-  padding-top: 21px;
-  border: 1px solid #888888; }
-=======
       top: 0px; }
 
 /*contact-optimization*/
@@ -10385,4 +10355,3 @@ a.button {
     border: 1px solid #83050B;
     color: #ffffff;
     height: 40px; }
->>>>>>> 8ef07a0be0978a62b7142b6770904bb1168add20

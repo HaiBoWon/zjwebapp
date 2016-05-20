@@ -151,37 +151,8 @@
   }
 }
 
-<<<<<<< HEAD
-.feedback-select{
-  border-radius: 5px;
-  height: 30px;
-  width: 90%;
-  position: relative;
-  left: 5%;
-  top: 10px;
-  border-color: #888888;
-}
 
-.feedback-textarea{
-  border-radius: 5px;
-  width: 90%;
-  height: 200px;
-  position: relative;
-  left: 5%;
-  top: 30px;
-}
-
-.-textarea{
-  border-radius: 5px;
-  width: 90%;
-  height: 40px;
-  position: relative;
-  left: 5%;
-  top: 70px;
-  padding-top: 21px;
-  border: 1px solid #888888;
-=======
-/*contact-optimization*/
+  /*contact-optimization*/
 
 .contact-ul {
   list-style: none;
@@ -203,7 +174,7 @@
       }
 
     }
-    .table-contact{
+    .table-contact {
       margin-top: 30px;
       margin-bottom: 30px;
     }
@@ -219,11 +190,11 @@
   }
 }
 
-/*feedback-optimization*/
+  /*feedback-optimization*/
 
-.feedback-box{
+.feedback-box {
   text-align: center;
-  select{
+  select {
     margin-top: 40px;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -231,7 +202,7 @@
     height: 40px;
     border: 1px solid #707070;
   }
-  textarea{
+  textarea {
     margin-bottom: 20px;
     margin-left: 5%;
     border-radius: 5px;
@@ -240,21 +211,21 @@
     border: 1px solid #707070;
     resize: none;
   }
-  input{
+  input {
     width: 90%;
     border-radius: 5px;
     height: 40px;
     margin-bottom: 20px;
     border: 1px solid #707070;
   }
-  button{
+  button {
     width: 90%;
     border-radius: 5px;
-    margin-top:20px;
+    margin-top: 20px;
     background-color: #83050B;
     border: 1px solid #83050B;
     color: #ffffff;
     height: 40px;
   }
->>>>>>> 8ef07a0be0978a62b7142b6770904bb1168add20
 }
+
