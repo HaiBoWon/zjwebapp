@@ -94,6 +94,10 @@ angular.module('zjfae.controllers',[])
         $ionicPopup.alert({title:'请填写反馈内容'});
         return;
       }
+      if(!!$scope.formData.phone&&!checkPhone($scope.formData.phone)){
+        $ionicPopup.alert({title:'请正确输入手机号'});
+        return;
+      }
       var promiseAdd=FeedBack.addFeedBack({
         level:1,
         optype:$scope.formData.feedType,
@@ -134,3 +138,11 @@ angular.module('zjfae.controllers',[])
       window.callActivityPlugin();
     };
   });
+
+function checkPhone(mobile) {
+  if ((/^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d{8}$/).exec(mobile)){
+    return true;
+  }else {
+    return false;
+  }
+}
