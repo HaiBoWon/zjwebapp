@@ -3,6 +3,8 @@
  */
 angular.module('zjfae.config', [])
   .constant('config',{
-    isLogin:true,
-    interfaceTo:"/ife/mzj/pbife.do?fh=VREGMZJ000000J00&pbname="
+    interfaceTo:"/ife/mzj/pbife.do?fh=VREGMZJ000000J00&p=and&pbname=",
+    interfaceFeed:"/ife/azj/pblog.do?fh=VLOGAZJ000000J00"
+    //interfaceFeedTo:"http://103.44.144.19:8181/ife/azj/pblog.do?fh=VLOGAZJ000000J00"
+    //interfaceTo:"http://103.44.144.19:8181/ife/mzj/pbife.do?fh=VREGMZJ000000J00&p=and&pbname=",
   });

@@ -79,7 +79,36 @@ angular.module('zjfae.controllers',[])
   })
   .controller('ContactCtrl', function ($scope) {
   })
-  .controller('FeedbackCtrl', function ($scope) {
+  .controller('FeedbackCtrl', function ($scope,FeedBack,$ionicPopup) {
+    $scope.formData={};
+    var promise = FeedBack.getFeedType();
+      promise.then(function(data){
+      $scope.formData.feedTypes=data.feedTypes;
+    });
+    $scope.addFeedBack=function(){
+      if(!$scope.formData.feedType){
+        $ionicPopup.alert({title:'请选择反馈类型'});
+        return;
+      }
+      if(!$scope.formData.content){
+        $ionicPopup.alert({title:'请填写反馈内容'});
+        return;
+      }
+      var promiseAdd=FeedBack.addFeedBack({
+        level:1,
+        optype:$scope.formData.feedType,
+        contents:$scope.formData.content,
+        backend_url:$scope.formData.phone //电话
+      });
+      promiseAdd.then(function(data){
+        if (data.body.returnCode == "000000") {
+          $ionicPopup.alert({title:'反馈成功，谢谢！'});
+          $scope.formData.feedType=null;
+          $scope.formData.content="";
+          $scope.formData.phone="";
+        }
+      });
+    }
   })
   .controller('BackCtrl',function($scope, $ionicNavBarDelegate){
 

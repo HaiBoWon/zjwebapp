@@ -117,4 +117,23 @@ angular.module('zjfae.services', [])
         return null;
       }
     };
+  })
+  .factory('FeedBack',function($http,$q,config){
+    return{
+      addFeedBack: function (condtion){
+        var deferred = $q.defer();
+        $http.post(config.interfaceFeed,condtion
+        ).success(function (data) {
+          deferred.resolve(data);
+        });
+        return deferred.promise;
+      },
+      getFeedType: function () {
+        var deferred = $q.defer();
+        $http.get("data/feedBack.json").success(function (data) {
+          deferred.resolve(data);
+        });
+        return deferred.promise;
+      }
+  }
   });
