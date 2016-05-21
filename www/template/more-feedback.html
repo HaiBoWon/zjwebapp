@@ -1,15 +1,6 @@
 <ion-view view-title="意见反馈" hide-nav-bar="true">
   <ion-content class="feedback" scroll="false">
     <div class="list list-space">
-      <label class="item item-input item-select">
-        <div class="input-label">
-          请选择意见类型
-        </div>
-        <select ng-model="formData.feedType" ng-options="m.name for m in formData.feedTypes">
-          <option value="">-- 请选择 --</option>
-        </select>
-      </label>
-      <label>{{feedType}}</label>
       <label class="item item-input">
         <textarea cols="30" rows="10" ng-model="formData.content" placeholder="请输入您的反馈意见"></textarea>
       </label>

@@ -127,13 +127,6 @@ angular.module('zjfae.services', [])
           deferred.resolve(data);
         });
         return deferred.promise;
-      },
-      getFeedType: function () {
-        var deferred = $q.defer();
-        $http.get("data/feedBack.json").success(function (data) {
-          deferred.resolve(data);
-        });
-        return deferred.promise;
       }
   }
   });

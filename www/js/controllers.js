@@ -81,15 +81,7 @@ angular.module('zjfae.controllers',[])
   })
   .controller('FeedbackCtrl', function ($scope,FeedBack,$ionicPopup) {
     $scope.formData={};
-    var promise = FeedBack.getFeedType();
-      promise.then(function(data){
-      $scope.formData.feedTypes=data.feedTypes;
-    });
     $scope.addFeedBack=function(){
-      if(!$scope.formData.feedType){
-        $ionicPopup.alert({title:'请选择反馈类型'});
-        return;
-      }
       if(!$scope.formData.content){
         $ionicPopup.alert({title:'请填写反馈内容'});
         return;
@@ -98,16 +90,15 @@ angular.module('zjfae.controllers',[])
         $ionicPopup.alert({title:'请正确输入手机号'});
         return;
       }
-      var promiseAdd=FeedBack.addFeedBack({
+      var promise=FeedBack.addFeedBack({
         level:1,
-        optype:$scope.formData.feedType.id,
+        optype:15,
         contents:$scope.formData.content,
         backend_url:$scope.formData.phone //电话
       });
-      promiseAdd.then(function(data){
+      promise.then(function(data){
         if (data.body.returnCode == "000000") {
           $ionicPopup.alert({title:'反馈成功，谢谢！'});
-          $scope.formData.feedType=null;
           $scope.formData.content="";
           $scope.formData.phone="";
         }
