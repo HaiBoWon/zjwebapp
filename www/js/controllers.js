@@ -100,7 +100,7 @@ angular.module('zjfae.controllers',[])
       }
       var promiseAdd=FeedBack.addFeedBack({
         level:1,
-        optype:$scope.formData.feedType,
+        optype:$scope.formData.feedType.id,
         contents:$scope.formData.content,
         backend_url:$scope.formData.phone //电话
       });
