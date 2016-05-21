@@ -105,7 +105,6 @@ angular.module('zjfae.controllers',[])
         backend_url:$scope.formData.phone //电话
       });
       promiseAdd.then(function(data){
-        console.log(data);
         if (data.body.returnCode == "000000") {
           $ionicPopup.alert({title:'反馈成功，谢谢！'});
           $scope.formData.feedType=null;
