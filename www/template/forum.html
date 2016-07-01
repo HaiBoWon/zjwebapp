@@ -13,9 +13,9 @@
         <li ng-repeat="forum in forums" style="width: 100%;display: inline-block">
           <a ng-href="#forumNote/{{forum.id}}" style="width: 100%">
             <div class="title">
-              <span>{{forum.title}}</span>
+              <span>{{forum.title}}2.0.3</span>
             </div>
-            <p class="clearfix">
+            <p class="clearfix" style="white-space: nowrap">
               <em>{{forum.seeNoteNum}}&nbsp;/&nbsp;{{forum.reNoteNum}}</em>
               <span><i class="icon ion-android-happy"></i>{{forum.userName}}</span><span style="display: block ;width: 150px;white-space: nowrap">{{forum.time}}</span>
             </p>
