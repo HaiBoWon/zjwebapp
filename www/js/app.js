@@ -92,7 +92,12 @@ angular.module('zjfae', ['ionic', 'zjfae.controllers', 'zjfae.services','zjfae.c
       url:'/contactOptimization',
       templateUrl:'template/contact-optimization.html'/*,
        controller:'ServiceCentreCtrl'*/
-    });
+    })
+      .state('post',{
+        url:'/post',
+        templateUrl:'template/post.html'/*,
+         controller:'ServiceCentreCtrl'*/
+      });
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/home');
   });

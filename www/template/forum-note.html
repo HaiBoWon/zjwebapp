@@ -11,12 +11,39 @@
             <p class="msg"><strong><a href="#">{{detail.userName}}</a></strong><em>{{detail.status}}</em></p>
             <p class="opbar">{{detail.date}}<!--<a href="#">收藏</a><a href="#">只看楼主</a>--></p>
           </div>
+          <div >
+            {{detail.content}}
+          </div>
+          <div class="visitcomment">
+            <section >
+              <ul>
+                <li>
+                  <label><a href="">公司名称：</a></label><span on-tap="showReplyBox()">浙江金融资产交易中心</span>
+                </li>
+                <li>
+                  <label><a href="">公司地址：</a></label><span on-tap="showReplyBox()">杭州市江干区富春路290号钱江国际时代广场2幢27-29层</span>
+                </li>
+                <li>
+                  <label><a href="">公司网址：</a></label><span on-tap="showReplyBox()">http://www.zjfae.com</span>
+                </li>
+                <li>
+                  <label><a href="">电子邮件：</a></label><span on-tap="showReplyBox()">service@zjfae.com</span>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="ft text-right">
+            <a href="#"><i class="icon ion-android-textsms" on-tap="showBox()"> </i></a>
+          </div>
+
         </div>
-        <div class="bd">
-          {{detail.content}}
-        </div>
-        <div class="ft text-right">
-          <a href="#"><i class="icon ion-chatbox-working"></i></a>
+        <div ng-class="{true:'',false:'hide'}[showbox]">
+          <label  class="item item-input " style="margin-right: 10px;margin-left: 10px">
+            <textarea placeholder="{{somePlaceholder}}"></textarea>
+          </label>
+          <div class="form-item clearfix" style="">
+            <button type="button" style="width: 15%;float: right;display: block;margin-right: 10px" class="button button-small button-assertive button-block" on-tap="hideBox()">提交</button>
+          </div>
         </div>
       </li>
     </ul>

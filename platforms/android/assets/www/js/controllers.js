@@ -43,6 +43,20 @@ angular.module('zjfae.controllers',[])
       $scope.forumNote = data;
       $ionicLoading.hide();
     });
+    $scope.somePlaceholder="";
+    $scope.showbox = false;
+    $scope.showBox = function () {
+      $scope.showbox = true;
+      $scope.somePlaceholder="请输入内容"
+    };
+    $scope.hideBox=function(){
+      $scope.showbox = false;
+    };
+    $scope.showReplyBox=function(){
+      $scope.showbox = true;
+      $scope.somePlaceholder="回复小财主"
+    }
+
   })
   .controller('ForumNoteSpeakCtrl',function($scope,$ionicLoading,ForumInfo,$stateParams){
     var promise = ForumInfo.get($stateParams.noteId); //获得承诺接口

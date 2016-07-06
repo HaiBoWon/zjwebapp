@@ -327,7 +327,6 @@ text-align: right;
       padding:10px;
     }
     .ft{
-      padding:0 10px 5px;
       a{font-size: 26px;}
     }
     .pic{
@@ -503,3 +502,38 @@ text-align: right;
 }
 
 @import "ionic.syx";
+
+.visitcomment{
+  background-color: aliceblue;
+  a{
+    text-decoration: none;
+  }
+  margin-top: 10px;
+  font-size: 12px;
+  border: 1px dashed silver;
+  li{
+    border-bottom: 0 !important;
+    label{
+      color:#007aff;
+      font-size: 12px!important;
+    }
+  }
+}
+.forum-tilte{
+  width: 100%;
+  display: inline-block;
+  border-bottom: 1px solid silver;
+  li{
+    float: left;
+    border-bottom: 0!important;
+    padding: 10px 0;
+    a{
+      color: black;
+      font-size: 14px!important;
+    }
+    .a-red{
+      color: red!important;
+
+    }
+  }
+}

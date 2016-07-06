@@ -172,8 +172,6 @@
     color: #4d4d4d;
     line-height: 38px;
   }
-<<<<<<< HEAD
-=======
 
   a {
     text-decoration: none;
@@ -184,5 +182,16 @@
     color: #707070;
     line-height: 35px;
   }
->>>>>>> dcdbb7ae110ec0673a9ef38cc16741ea1a90e264
+}
+
+.post-list{
+  textarea{
+    resize: none;
+    height: 300px;
+  }
+}
+
+.post-botton{
+  margin-top: 10px;
+  width: 100%;
 }

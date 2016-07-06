@@ -9,6 +9,15 @@
       </ion-slide>
     </ion-slide-box>
     <ion-content class="note-list">
+      <div>
+        <ul class="forum-tilte">
+          <li><a class="a-red" href="">推荐</a></li>
+          <li><a href="">答疑解惑</a></li>
+          <li><a href="">浙金讲堂</a></li>
+          <li><a href="">浙金官方</a></li>
+          <li><a href="">社区</a></li>
+        </ul>
+      </div>
       <ul>
         <li ng-repeat="forum in forums" style="width: 100%;display: inline-block">
           <a ng-href="#forumNote/{{forum.id}}" style="width: 100%">
@@ -24,4 +33,7 @@
       </ul>
     </ion-content>
   </ion-content>
+  <ion-footer-bar>
+    <a style="width: 100%" class="button button-assertive" ng-href="#/post">发布信息</a>
+  </ion-footer-bar>
 </ion-view>

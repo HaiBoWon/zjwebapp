@@ -10011,10 +10011,8 @@ a.button {
     padding: 15px 10px 5px 50px; }
   .note-detail ul > li .bd {
     padding: 10px; }
-  .note-detail ul > li .ft {
-    padding: 0 10px 5px; }
-    .note-detail ul > li .ft a {
-      font-size: 26px; }
+  .note-detail ul > li .ft a {
+    font-size: 26px; }
   .note-detail ul > li .pic {
     position: absolute;
     left: 10px;
@@ -10336,3 +10334,16 @@ a.button {
   float: right;
   color: #707070;
   line-height: 35px; }
+
+.visitcomment {
+  background-color: aliceblue;
+  margin-top: 10px;
+  font-size: 12px;
+  border: 1px dashed silver; }
+  .visitcomment a {
+    text-decoration: none; }
+  .visitcomment li {
+    border-bottom: 0 !important; }
+    .visitcomment li label {
+      color: #007aff;
+      font-size: 12px !important; }
