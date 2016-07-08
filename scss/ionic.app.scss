@@ -507,6 +507,7 @@ text-align: right;
   background-color: aliceblue;
   a{
     text-decoration: none;
+
   }
   margin-top: 10px;
   font-size: 12px;
@@ -517,6 +518,10 @@ text-align: right;
       color:#007aff;
       font-size: 12px!important;
     }
+    a{
+      color: black;
+    }
+
   }
 }
 .forum-tilte{
@@ -527,9 +532,12 @@ text-align: right;
     float: left;
     border-bottom: 0!important;
     padding: 10px 0;
+    width: 20%;
+    text-align: center;
     a{
-      color: black;
+      color: black !important;
       font-size: 14px!important;
+      padding: 0!important;
     }
     .a-red{
       color: red!important;

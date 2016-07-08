@@ -47,7 +47,7 @@ angular.module('zjfae.controllers',[])
     $scope.showbox = false;
     $scope.showBox = function () {
       $scope.showbox = true;
-      $scope.somePlaceholder="请输入内容"
+      $scope.somePlaceholder="请输入内容";
     };
     $scope.hideBox=function(){
       $scope.showbox = false;

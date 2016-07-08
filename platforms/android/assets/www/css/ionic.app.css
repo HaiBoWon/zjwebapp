@@ -10335,6 +10335,14 @@ a.button {
   color: #707070;
   line-height: 35px; }
 
+.post-list textarea {
+  resize: none;
+  height: 300px; }
+
+.post-botton {
+  margin-top: 10px;
+  width: 100%; }
+
 .visitcomment {
   background-color: aliceblue;
   margin-top: 10px;
@@ -10347,3 +10355,20 @@ a.button {
     .visitcomment li label {
       color: #007aff;
       font-size: 12px !important; }
+
+.forum-tilte {
+  width: 100%;
+  display: inline-block;
+  border-bottom: 1px solid silver; }
+  .forum-tilte li {
+    float: left;
+    border-bottom: 0 !important;
+    padding: 10px 0;
+    width: 20%;
+    text-align: center; }
+    .forum-tilte li a {
+      color: black;
+      font-size: 14px !important;
+      padding: 0 !important; }
+    .forum-tilte li .a-red {
+      color: red !important; }
